@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let corner = parseInt(prompt("nhập corner"));
+    // for (; corner<=0;) {
+    //     parseInt(prompt("vui lòng nhập giá trị lớn hơn 0 "));
+    // }
+    //     for (let i = 1; i <= corner; i++) {
+    //         for (let k = 1; k <= i; k++) {
+    //             document.write(" *");
+    //         }
+    //
+    //         document.write("a");
+    //     }
+    // for( let i = 1; i <= corner; i++) {
+    //
+    //     for(let k = i; k <= corner; k++){
+    //
+    //             document.write(" *");
+    // }
+    //
+    //     document.write("<br>");
+    // }
+    // for(let i=1;i<=corner;i++) {
+    //     for (let k = 1; k <= corner; k++) {
+    //         if (k <= corner - i)
+    //             document.write("&nbsp;&nbsp;");
+    //         else
+    //             document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+    for(let i=corner ;i>=1;i--) {
+        for (let k = 1; k <= corner; k++) {
+            if (k <= corner - i)
+                document.write("&nbsp;&nbsp;");
+            else
+                document.write("*");
+        }
+        document.write("<br>");
+    }
+
+</script>
+
+</body>
+</html>
