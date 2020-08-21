@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="menu()">
+<script>
+    function menu() {
+        // document.write("Menu: <br>");
+        // document.write("1: Nhap N <br>");
+        // document.write("2: Kiem tra so nguyen to <br>");
+        // document.write("3: Hien thi N so nguyen to dau tien <br>");
+        // document.write("4: Thoat <br>");
+        document.write("<input type='text' id='choice'/>");
+        document.write("<input type='button' onclick='showMenu()' value='Menu'/>");
+
+    }
+    function showMenu(){
+        let N=0;
+        let choice =parseInt(document.getElementById('choice').value);
+        do{
+            menu();
+
+            switch (choice) {
+                case 1:
+                    N=10;
+                    alert(N);
+                    break;
+                case 2:
+                    if(ktraSNT(N))
+                        document.write(N+' So nguyen to');
+                    else
+                        document.write(N+" khong la so nguyen to");
+                    break;
+                case 3:
+                        alert("3");
+                    break;
+                default:
+                    document.write("Tam biet");
+                    break;
+            }
+        }while(choice>=1 && choice<4);
+    }
+    function nhapN(){
+        N=10;
+        return N;
+    }
+    function ktraSNT(N){
+        if(N<2)
+            return false;
+        for(i=2;i<=Math.sqrt(N);i++){
+            if(N%i==0)
+                return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

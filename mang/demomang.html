@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thao tác với mảng</title>
+</head>
+<body>
+<h1>Sample Screen: </h1>
+<input type="text" id="txt">
+<input type="button" onclick="submit()" value="Add">
+<input type="button" onclick="display()" value="Dislay">
+<p id="result"></p>
+<script>
+    let x = 0;
+    let array = Array();
+    function submit(){
+        array[x] = document.getElementById("txt").value;
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("txt").value = "";
+    }
+    function display() {
+        let e = "<br/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/> <hr/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
+</body>
+</html>

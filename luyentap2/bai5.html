@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t</title>
+</head>
+<body>
+<h4>Nhập số tiền </h4>
+<input type="text" id="money"><br>
+<h4>Số tháng vay</h4>
+<input type="text" id="moneymoth"><br>
+<h4>lãi suất</h4>
+<input type="text" id="interest"><br><br>
+<input type="button" value="Tính" onclick="submit()"><br>
+<p id="result"></p>
+
+<script>
+    function submit(){
+        let money=parseFloat(document.getElementById("money").value);
+        let months=parseInt(document.getElementById("moneymoth").value);
+        let rate=parseFloat(document.getElementById("interest").value);
+        let interest=0;
+        let result=document.getElementById("result");
+        let output;
+        for (let i = 1; i <=months ; i++) {
+            interest=(money*rate)/100;
+            money += interest;
+        } result.innerHTML="Tổng tiền vốn lẫn lãi sau " + months+ " tháng" +" bằng " + money;
+    }
+</script>
+</body>
+</html>

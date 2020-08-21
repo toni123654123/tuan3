@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[9,-3,12,-19,11,-18];
+    document.write("<br> Tổng số nguyên âm là: " + negValnue(arr));
+
+    function negValnue(arr){
+        let amount = 0;
+        let size = arr.length;
+        for (let i = 0; i<size ; i++){
+            if(arr[i]<0){
+                amount = amount + 1;
+            }
+        }return amount;
+    }
+</script>
+</body>
+</html>
