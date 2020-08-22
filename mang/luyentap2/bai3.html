@@ -6,19 +6,15 @@
 </head>
 <body>
 <script>
-    let arr = ["a","b","c","1","2","3" ];
-    document.write("tổng "  + numIndex(arr));
-
-    function numIndex(arr) {
-
-            for (let i = 0; i < size; i++) {
-
-
-            }
-
+    let arr = ['a', 'b', 'c', '4', '5', '6'];
+    let size = arr.length;
+    let count = 0;
+    for (let i = 0; i < size; i++) {
+        if (arr[i] <= '9' && arr[i] >= '0') {
+            count++;
+        }
+        document.write(count);
     }
-
-
 </script>
 </body>
 </html>
