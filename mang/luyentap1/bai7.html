@@ -12,15 +12,13 @@
 <p id="res"></p>
 <p id="rest"></p>
 <script>
-    let arr=[9,3,12,19,11,18];
-    let i;
-    let size =arr.length,x;
+    let arr = [9, 3, 12, 19, 11, 18];
+    let i,j;
+    let size = arr.length, x;
 
     function number(arr) {
 
-
-         x = +document.getElementById("num").value;
-
+        x = +document.getElementById("num").value;
 
         for (i = 0; i < size; i++) {
 
@@ -29,21 +27,34 @@
                 document.getElementById("res").innerText = " is in the array";
 
                 break;
-            }else if (i === size-1){
+            } else if (i === size - 1) {
 
-                document.getElementById("res").innerText ="is not in the array";
+                document.getElementById("res").innerText = "is not in the array";
 
             }
 
         }
 
     }
-    function delnumber(arr){
-        for (i=0;i<size-1;i++){
-            if (arr[i] == x) {
-                arr.splice(i, 1)
+
+    function delnumber(arr) {
+        let index;
+
+        for (i = 0; i < size - 1; i++) {
+
+            if (arr[i] === x) {
+
+                index = i;
+
+                for ( j = index; j < size; j++) {
+
+                    arr[j] = arr[j + 1];
+                }
+
             }
-        }document.getElementById("rest").innerText=arr;
+            arr[size - 1] = 0;
+        }
+        document.getElementById("rest").innerText = arr;
     }
 </script>
 </body>
