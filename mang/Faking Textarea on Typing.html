@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<textarea id="txt" cols="30" rows="6" ></textarea>-->
+<!--<script>-->
+<!--    let strs = ["Em đẹp là được!"];-->
+
+<!--    let t = ('#txt'),-->
+<!--        str = strs[0],-->
+<!--        size = str.length,-->
+<!--        on = false;-->
+
+<!--    t.keydown(function(e){-->
+<!--        let l = t.val().length % size+1;-->
+
+<!--        if(e.which == 9){-->
+<!--            str = strs[(on = !on)|0];-->
+<!--            size = str.length;-->
+<!--        }-->
+<!--        t.val(str.substr(0,l));-->
+<!--        e.preventDefault();-->
+<!--    })-->
+<!--</script>-->
+<h2>Type anthing slowly</h2>
+<form name="f">
+       <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+</form>
+
+<script>
+    let a = " Em đẹp là được!!";
+    let n = "";
+
+    function typeTextarea() {
+        let t = document.f.txt.value;
+        let j = t.length;
+        if (j > 0) {
+            for (let i = 1; i <= j; i++) {
+                n = n + a[i];
+                if (i == a.length) {
+                    document.f.txt.value = "";
+                    n = "";
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n = "";
+        setTimeout("typeTextarea()", 1);
+    }
+</script>
+</body>
+</html>

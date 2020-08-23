@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2fc148e-0528-421f-bfb5-e0a9be1559df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mang/mang02/tudien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mang/Faking Textarea on Typing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mang/demomin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang/luyentap1/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang/luyentap1/bai1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tuan\Desktop\codegymx\tuan3\for" />
       <recent name="C:\Users\Tuan\Desktop\codegymx\tuan3\mang\luyentapmang01" />
     </key>
   </component>
@@ -74,7 +77,8 @@
       <workItem from="1597930343730" duration="8036000" />
       <workItem from="1597971539885" duration="12832000" />
       <workItem from="1598018923090" duration="1349000" />
-      <workItem from="1598066636132" duration="11702000" />
+      <workItem from="1598066636132" duration="12538000" />
+      <workItem from="1598195024476" duration="1776000" />
     </task>
     <servers />
   </component>
